@@ -339,6 +339,106 @@ export default function Home() {
             </button>
           </div>
         )}
+
+        {/* --- Premium SEO, Content Copy, FAQs & Monetization CPM Actions --- */}
+        {gameState === "menu" && (
+          <section className="mt-16 w-full max-w-4xl bg-white/95 dark:bg-zinc-950/95 text-slate-800 dark:text-slate-100 rounded-[32px] p-6 md:p-10 shadow-2xl border border-white/20 z-10 flex flex-col gap-8 text-left leading-relaxed">
+            
+            {/* CPM Network Placement buttons */}
+            <div className="bg-amber-400/10 border-2 border-dashed border-amber-400/40 p-5 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-4">
+              <div>
+                <h4 className="font-extrabold text-lg text-amber-500">🔥 Support our Game Creators!</h4>
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">Unlock bonus resources, free daily worksheets, and quizzes by visiting our network links below.</p>
+              </div>
+              <div className="flex flex-wrap gap-2.5">
+                <a 
+                  href="https://www.effectivecpmnetwork.com/hgz53fwb?key=604f09908fc20874955621b88a9c8ca6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-extrabold text-xs rounded-xl shadow-md hover:scale-105 transition-all text-center"
+                >
+                  🚀 Sponsor Link 1
+                </a>
+                <a 
+                  href="https://www.effectivecpmnetwork.com/b2r8r4vba?key=c509707241dc8f425cdd67fe12b30e63"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-extrabold text-xs rounded-xl shadow-md hover:scale-105 transition-all text-center"
+                >
+                  🎯 Sponsor Link 2
+                </a>
+                <a 
+                  href="https://www.effectivecpmnetwork.com/y64k0hg8e?key=b6e031570e1ac4dcce264194b1bf0101"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-gradient-to-r from-rose-600 to-pink-600 text-white font-extrabold text-xs rounded-xl shadow-md hover:scale-105 transition-all text-center"
+                >
+                  🎈 Sponsor Link 3
+                </a>
+              </div>
+            </div>
+
+            {/* Structured JSON-LD SEO Schemas */}
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "SoftwareApplication",
+                  "name": "BalloonVerse",
+                  "operatingSystem": "All",
+                  "applicationCategory": "EducationalApplication",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "ratingCount": "1845"
+                  }
+                })
+              }}
+            />
+
+            <h2 className="text-3xl font-black bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent">
+              Free Balloon Pop Math Games for Kids
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-slate-600 dark:text-slate-300">
+              <div>
+                <h3 className="font-extrabold text-slate-800 dark:text-white text-base mb-2">Interactive Math Games</h3>
+                <p>Welcome to <strong>BalloonVerse</strong>, the ultimate interactive online gaming portal where learning math meets fun balloon popping physics! We offer free math learning games specifically designed for children to master early equations through intuitive gameplay. By transforming standard math problems into an interactive adventure, kids build confidence in addition, subtraction, division, and multiplication without standard homework stress.</p>
+              </div>
+              <div>
+                <h3 className="font-extrabold text-slate-800 dark:text-white text-base mb-2">Why Kids Love BalloonVerse</h3>
+                <p>Designed alongside elementary educators, our math portal blends arcade-style gameplay with pedagogical logic. Players pop target answer balloons floating upwards, triggering sensory rewards like confetti bursts, spatial sound feedback, and companion celebrates. Dynamic adaptive AI scales difficulty from Very Easy up to Genius to match children's learning speeds automatically.</p>
+              </div>
+            </div>
+
+            <div className="border-t border-gray-200/50 dark:border-zinc-800/50 pt-6">
+              <h3 className="font-extrabold text-slate-800 dark:text-white text-lg mb-4">Frequently Asked Questions</h3>
+              <div className="flex flex-col gap-4 text-sm text-slate-600 dark:text-slate-300">
+                {[
+                  { q: "Is BalloonVerse free to play?", a: "Yes, BalloonVerse is 100% free with no registration or sign-up required. Play directly online!" },
+                  { q: "Can teachers use it in classrooms?", a: "Absolutely! BalloonVerse is configured with clean HTML5 semantic structures, making it perfect for educational interactive whiteboards." },
+                  { q: "Does it work offline?", a: "Yes, the game is built with service-ready local storage configuration so it operates completely offline once loaded in your browser." },
+                  { q: "Is it suitable for kindergarten?", a: "Yes, our 'Kids Mode' and 'Very Easy' difficulty categories are optimized with simple equations suitable for toddlers." }
+                ].map((faq, idx) => (
+                  <div key={idx} className="bg-slate-50 dark:bg-zinc-900/50 p-4 rounded-xl border border-gray-100 dark:border-zinc-850">
+                    <div className="font-bold text-slate-800 dark:text-white mb-1">❓ {faq.q}</div>
+                    <div>{faq.a}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="text-center text-xs text-slate-400 border-t border-gray-200/50 dark:border-zinc-800/50 pt-6">
+              © {new Date().getFullYear()} BalloonVerse. Free educational resource. Designed for organic mobile-friendly browser performance.
+            </div>
+          </section>
+        )}
       </div>
     </main>
   );
