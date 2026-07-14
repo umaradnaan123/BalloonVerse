@@ -1,0 +1,6 @@
+/* TEAM */
+Project: BalloonVerse
+Description: Interactive Educational Math Game
+Developer: Adnaan Faiz
+Website: https://balloon-verse.vercel.app
+Technology: Next.js, React, TypeScript, Tailwind CSS, Framer Motion

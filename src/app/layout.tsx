@@ -29,13 +29,14 @@ export const metadata: Metadata = {
     "division games",
     "kindergarten math games"
   ],
+  manifest: "/manifest.webmanifest",
   alternates: {
-    canonical: "https://balloonverse.vercel.app",
+    canonical: "https://balloon-verse.vercel.app",
   },
   openGraph: {
     title: "BalloonVerse – Free Balloon Pop Math Games for Kids",
     description: "Play BalloonVerse, a free interactive balloon pop math game for kids.",
-    url: "https://balloonverse.vercel.app",
+    url: "https://balloon-verse.vercel.app",
     type: "website",
   },
   twitter: {
