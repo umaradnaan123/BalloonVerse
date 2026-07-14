@@ -1,11 +1,4 @@
-# robots.txt for BalloonVerse
-
 User-agent: *
 Allow: /
-
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-Disallow: /_next/static/
 
 Sitemap: https://balloon-verse.vercel.app/sitemap.xml
