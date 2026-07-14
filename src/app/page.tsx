@@ -5,6 +5,7 @@ import { useGameStore, GameMode, DifficultyLevel } from "./store/store";
 import GameView from "./components/GameView";
 import StatsView from "./components/StatsView";
 import { gameAudio } from "./utils/audio";
+import Link from "next/link";
 import { Play, Award, Settings as SettingsIcon, BarChart2, Check, RefreshCw, X, Sparkles, HelpCircle } from "lucide-react";
 
 export default function Home() {
@@ -432,6 +433,17 @@ export default function Home() {
                   </div>
                 ))}
               </div>
+            </div>
+
+            {/* Subpages game routes navigation links */}
+            <div className="border-t border-gray-200/50 dark:border-zinc-800/50 pt-6 flex flex-wrap gap-4 text-xs font-bold text-slate-500 justify-center">
+              <Link href="/addition-balloon-game" className="hover:text-blue-500 transition-colors">➕ Addition Balloon Game</Link>
+              <span className="text-gray-300">|</span>
+              <Link href="/subtraction-balloon-game" className="hover:text-emerald-500 transition-colors">➖ Subtraction Balloon Game</Link>
+              <span className="text-gray-300">|</span>
+              <Link href="/multiplication-balloon-game" className="hover:text-amber-500 transition-colors">✖️ Multiplication Balloon Challenge</Link>
+              <span className="text-gray-300">|</span>
+              <Link href="/division-balloon-game" className="hover:text-rose-500 transition-colors">➗ Division Balloon Adventure</Link>
             </div>
 
             <div className="text-center text-xs text-slate-400 border-t border-gray-200/50 dark:border-zinc-800/50 pt-6">
