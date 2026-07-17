@@ -441,9 +441,11 @@ export default function Home() {
               <span className="text-gray-300">|</span>
               <Link href="/subtraction-balloon-game" className="hover:text-emerald-500 transition-colors">➖ Subtraction Balloon Game</Link>
               <span className="text-gray-300">|</span>
-              <Link href="/multiplication-balloon-game" className="hover:text-amber-500 transition-colors">✖️ Multiplication Balloon Challenge</Link>
+              <Link href="/multiplication-balloon-game" className="hover:text-amber-500 transition-colors">✖️ Multiplication Challenge</Link>
               <span className="text-gray-300">|</span>
-              <Link href="/division-balloon-game" className="hover:text-rose-500 transition-colors">➗ Division Balloon Adventure</Link>
+              <Link href="/division-balloon-game" className="hover:text-rose-500 transition-colors">➗ Division Adventure</Link>
+              <span className="text-gray-300">|</span>
+              <Link href="/math-worksheets" className="hover:text-violet-500 transition-colors">📝 Math Worksheets & Quizzes</Link>
             </div>
 
             <div className="text-center text-xs text-slate-400 border-t border-gray-200/50 dark:border-zinc-800/50 pt-6">
