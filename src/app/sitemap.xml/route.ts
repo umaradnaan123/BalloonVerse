@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+import { NextResponse } from "next/server";
+
+export function GET() {
+  const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://balloon-verse.vercel.app/</loc>
@@ -18,4 +21,12 @@
   <url>
     <loc>https://balloon-verse.vercel.app/math-worksheets</loc>
   </url>
-</urlset>
+</urlset>`;
+
+  return new NextResponse(sitemapXml, {
+    headers: {
+      "Content-Type": "application/xml",
+      "Cache-Control": "public, max-age=86400, s-maxage=86400, stale-while-revalidate",
+    },
+  });
+}
