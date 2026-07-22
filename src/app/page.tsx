@@ -128,10 +128,10 @@ export default function Home() {
                 <span>⭐</span>
                 <span>🎈</span>
               </div>
-              <h1 className="text-6xl md:text-8xl font-black tracking-tight text-white drop-shadow-[0_8px_16px_rgba(0,0,0,0.3)]">
-                Balloon Pop
-                <span className="block text-4xl md:text-5xl bg-gradient-to-r from-amber-300 via-yellow-200 to-rose-300 bg-clip-text text-transparent font-black mt-2">
-                  Math Adventure
+              <h1 className="text-5xl md:text-7xl font-black tracking-tight text-white drop-shadow-[0_8px_16px_rgba(0,0,0,0.3)]">
+                BalloonVerse
+                <span className="block text-3xl md:text-4xl bg-gradient-to-r from-amber-300 via-yellow-200 to-rose-300 bg-clip-text text-transparent font-black mt-2">
+                  Free Balloon Pop Math Games for Kids
                 </span>
               </h1>
             </div>

@@ -68,6 +68,45 @@ export const GameLandingPage: React.FC<GameLandingPageProps> = ({
 
   return (
     <div className="min-h-screen bg-gradient-to-tr from-slate-900 via-indigo-950 to-slate-900 text-white font-sans antialiased p-4 md:p-8 flex flex-col items-center">
+      {/* Structured Schema Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://balloon-verse.vercel.app"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": title,
+                    "item": `https://balloon-verse.vercel.app/${title.toLowerCase().replace(/\s+/g, "-")}`
+                  }
+                ]
+              },
+              {
+                "@type": "SoftwareApplication",
+                "name": title,
+                "operatingSystem": "All",
+                "applicationCategory": "EducationalApplication",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "0",
+                  "priceCurrency": "USD"
+                }
+              }
+            ]
+          })
+        }}
+      />
       
       {/* Top Breadcrumbs and Navigation */}
       <div className="w-full max-w-4xl flex items-center justify-between mb-8 z-10">
