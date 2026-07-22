@@ -29,21 +29,46 @@ export const metadata: Metadata = {
     "division games",
     "kindergarten math games"
   ],
+  applicationName: "BalloonVerse",
+  authors: [{ name: "Adnaan Faiz", url: "https://balloon-verse.vercel.app" }],
+  publisher: "BalloonVerse",
+  referrer: "origin-when-cross-origin",
   manifest: "/manifest.webmanifest",
   alternates: {
     canonical: "https://balloon-verse.vercel.app",
   },
   openGraph: {
     title: "BalloonVerse – Free Balloon Pop Math Games for Kids",
-    description: "Play BalloonVerse, a free interactive balloon pop math game for kids.",
+    description: "Play BalloonVerse, a free interactive balloon pop math game for kids. Practice addition, subtraction, multiplication, division, and improve math skills online.",
     url: "https://balloon-verse.vercel.app",
     type: "website",
+    siteName: "BalloonVerse",
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
     title: "BalloonVerse – Free Balloon Pop Math Games for Kids",
     description: "Play BalloonVerse, a free interactive balloon pop math game for kids.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   }
+};
+
+import type { Viewport } from "next";
+export const viewport: Viewport = {
+  themeColor: "#4F46E5",
+  colorScheme: "dark light",
+  width: "device-width",
+  initialScale: 1,
 };
 
 import Script from "next/script";
