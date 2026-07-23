@@ -81,7 +81,7 @@ export default function Home() {
     }
   };
 
-  if (!isMounted) return null;
+
 
   return (
     <main 

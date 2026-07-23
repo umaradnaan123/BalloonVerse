@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BalloonVerse – Free Balloon Pop Math Games for Kids",
-  description: "Play BalloonVerse, a free interactive balloon pop math game for kids. Practice addition, subtraction, multiplication, division, and improve math skills online.",
+  title: "Free Balloon Pop Math Games for Kids | BalloonVerse",
+  description: "Play BalloonVerse, a free interactive online balloon pop math game. Practice math facts in addition, subtraction, multiplication, and division today!",
   keywords: [
     "balloon pop game",
     "balloon math game",
@@ -38,17 +38,26 @@ export const metadata: Metadata = {
     canonical: "https://balloon-verse.vercel.app",
   },
   openGraph: {
-    title: "BalloonVerse – Free Balloon Pop Math Games for Kids",
-    description: "Play BalloonVerse, a free interactive balloon pop math game for kids. Practice addition, subtraction, multiplication, division, and improve math skills online.",
+    title: "Free Balloon Pop Math Games for Kids | BalloonVerse",
+    description: "Play BalloonVerse, a free interactive online balloon pop math game. Practice math facts in addition, subtraction, multiplication, and division today!",
     url: "https://balloon-verse.vercel.app",
     type: "website",
     siteName: "BalloonVerse",
     locale: "en_US",
+    images: [
+      {
+        url: "https://balloon-verse.vercel.app/icon.png",
+        width: 512,
+        height: 512,
+        alt: "BalloonVerse Logo Preview Banner"
+      }
+    ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "BalloonVerse – Free Balloon Pop Math Games for Kids",
-    description: "Play BalloonVerse, a free interactive balloon pop math game for kids.",
+    title: "Free Balloon Pop Math Games for Kids | BalloonVerse",
+    description: "Play BalloonVerse, a free interactive online balloon pop math game. Practice math facts in addition, subtraction, multiplication, and division today!",
+    images: ["https://balloon-verse.vercel.app/icon.png"],
   },
   robots: {
     index: true,
